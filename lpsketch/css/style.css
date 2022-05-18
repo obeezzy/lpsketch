@@ -1,0 +1,255 @@
+:root {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
+}
+
+html, body, main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    padding-top: 0px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'CircularStdBold', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header {
+    flex: 0 1 auto;
+}
+
+.sketchpad {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.controls {
+    flex: 0 1 auto;
+}
+
+#sketchpad {
+    width: 100%;
+    height: 60vw;
+    align-self: center;
+    padding: 4px;
+    max-height: 510px;
+}
+
+.sketchpad__header {
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+}
+
+.sketchpad__header__options {
+    margin-left: auto;
+}
+
+.sketchpad__header__status {
+    display: inline;
+    margin-right: 8px;
+}
+
+.sketchpad__header__status__indicator {
+    width: 10px;
+    height: 10px;
+    background-color: crimson;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.sketchpad__header__status__text {
+    display: inline-block;
+}
+
+.controls__tab-area {
+    width: 100%;
+    height: 100%;
+}
+
+.controls__led label {
+    padding-right: 8px;
+}
+
+.controls__frame {
+    margin: 4px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.controls__mode__select {
+    margin-bottom: 8px;
+}
+
+.controls__mode__content {
+    display: none;
+}
+
+.controls__playback__framerate > input {
+    margin-left: 8px;
+    margin-bottom: 8px;
+    max-width: 40px;
+    text-align: right;
+}
+
+.controls__playback__frame {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.controls__playback__frame > input {
+    display: flex;
+    align-self: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+
+.default-button {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 4px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.default-button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.default-button:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.default-button:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.icon-button {
+    padding: 0 4px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.playback-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox {
+  display: block;
+  align-self: center;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: darkgray;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

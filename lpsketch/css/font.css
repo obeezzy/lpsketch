@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'CircularStdBold';
+	src: url('../fonts/CircularStdBold/CircularStdBold.eot');
+	src: local('CircularStdBold'),
+             url('../fonts/CircularStdBold/CircularStdBold.woff') format('woff'),
+             url('../fonts/CircularStdBold/CircularStdBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'),
+             url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+.fontsforweb_fontid_79748 {
+	font-family: 'CircularStdBold' !important;
+}

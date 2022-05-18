@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="LP Sketch">
+        <meta name="author" content="Chronic Coder">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+        <script type="module" src="js/lpsketch/lp-sketchpad.js"></script>
+        <script type="module" src="js/lpsketch/lp-movie-roll.js"></script>
+        <script type="module" src="js/lpsketch/tab-area.js"></script>
+        <script type="module" src="js/app.js"></script>
+        <title>LP Sketch</title>
+    </head>
+    <body>
+        <main>
+            <header class="header">
+                <h1>lp sketch</h1>
+                <h2>Create bitmaps and movies for the Launchpad Mini MK3</h2>
+            </header>
+            <section class="sketchpad">
+                <div class="sketchpad__header">
+                    <div class="sketchpad__header__status">
+                        <div id="status-indicator" class="sketchpad__header__status__indicator"></div>
+                        <div id="status-text" class="sketchpad__header__status__text">Not connected</div>
+                    </div>
+                    <div class="sketchpad__header__options">
+                        <a id="save-button" href="#" class="default-button">Save</a>
+                        <label for="load-button" class="custom-file-upload default-button">
+                            <input id="load-button"
+                                   type="file"
+                                   name="load-button"
+                                   accept=".json, .bitmap.json, .movie.json" />
+                            Load
+                        </label>
+                    </div>
+                </div>
+                <lp-sketchpad id="sketchpad"></lp-sketchpad>
+            </section>
+            <section class="controls">
+                <tab-area class="controls__tab-area">
+                    <nav class="tab-nav">
+                        <button id="bitmap-tab" class="tab-navlink" data-tab-target="bitmap">Bitmap</button>
+                        <button id="movie-tab" class="tab-navlink active" data-tab-target="movie">Movie</button>
+                    </nav>
+                    <section class="tab-content" data-tab-content="bitmap">
+                        <div class="controls__led">
+                            <label>LED color:</label>
+                            <input id="bitmap-color-picker" type="color" value="#ff0000"/>
+                        </div>
+                    </section>
+                    <section class="tab-content" data-tab-content="movie">
+                        <div class="controls__led">
+                            <label>LED color:</label>
+                            <input id="movie-color-picker" type="color" value="#ff0000"/>
+                        </div>
+                        <div class="controls__frame">
+                            <button id="insert-button" class="default-button">Insert</button>
+                            <button id="update-button" class="default-button">Update</button>
+                            <button id="delete-button" class="default-button">Delete</button>
+                        </div>
+                        <lp-movie-roll id="movie-roll"></lp-movie-roll>
+                        <div class="controls__mode">
+                            <div class="controls__mode__select">
+                                <input type="radio" name="mode" data-mode="transform" disabled>Transform</input>
+                                <input type="radio" name="mode" data-mode="playback" checked>Playback</input>
+                            </div>
+                            <div class="controls__mode__content" data-mode="transform">
+                                <button>Up</button>
+                                <button>Down</button>
+                                <button>Left</button>
+                                <button>Right</button>
+                                <button>Rotate left</button>
+                                <button>Rotate right</button>
+                                <button>Shift left</button>
+                                <button>Shift right</button>
+                            </div>
+                            <div class="controls__mode__content" data-mode="playback">
+                                <div class="controls__playback__framerate">
+                                    <label>frames/sec:</label>
+                                    <input id="framerate-field" type="number" min="1" max="60" value="2" />
+                                </div>
+                                <div class="controls__playback__frame">
+                                    <button id="previous-frame-button" class="default-button icon-button">
+                                        <img class="playback-icon" src="images/previous-frame.svg" alt="Previous frame"/>
+                                    </button>
+                                    <button id="play-button" class="default-button icon-button">
+                                        <img id="play-button-icon" class="playback-icon" src="images/play.svg" alt="Play"/>
+                                    </button>
+                                    <button id="next-frame-button" class="default-button icon-button">
+                                        <img class="playback-icon" src="images/next-frame.svg" alt="Next frame"/>
+                                    </button>
+                                    <label class="checkbox">Loop
+                                      <input id="loop-checkbox"
+                                             type="checkbox">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </tab-area>
+            </section>
+        </main>
+    </body>
+</html>
