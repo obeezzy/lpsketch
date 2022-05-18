@@ -217,7 +217,6 @@ template.innerHTML = `
 class LPSketchpad extends HTMLElement {
     constructor() {
         super();
-        self._scale = 1;
         this._shadowRoot = this.attachShadow({ "mode": "open" });
         this._shadowRoot.appendChild(template.content.cloneNode(true));
         this._svg = this._shadowRoot.getElementById("lp");
@@ -234,16 +233,6 @@ class LPSketchpad extends HTMLElement {
         });
 
         return grid;
-    }
-
-    get scale() {
-        return self._scale;
-    }
-
-    set scale(value) {
-        self._scale = value;
-        this._svg.style.width = `${parseInt(value * this._svg.getAttribute("width"))}px`
-        this._svg.style.height = `${parseInt(value * this._svg.getAttribute("height"))}px`
     }
 
     get grid() {
