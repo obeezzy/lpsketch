@@ -11,7 +11,7 @@ function setupMovieModes() {
         });
     };
 
-    document.querySelectorAll(".controls__mode__select > input[type='radio']")
+    document.querySelectorAll(".controls__mode__select input[type='radio']")
         .forEach((modeButton) => {
         modeButton.onclick = () => displayMode(modeButton);
         if (modeButton.checked)
