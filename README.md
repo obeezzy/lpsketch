@@ -6,6 +6,7 @@ LP Sketch can connect to a Launchpad for direct control of the LEDs on its surfa
 ## Layout
 <img height="500" src="images/lpsketch.png"/>
 1. Connection status indicator: Shows if a Launchpad is connected.
+
 2. Save button: Save bitmap/movie to file
 3. **Load button**: Load bitmap/movie from file
 4. **Sketchpad**: Click on LED to toggle state
