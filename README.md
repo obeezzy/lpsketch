@@ -1,10 +1,11 @@
 # lpsketch
-LP Sketch is a web app used to create bitmaps and movies for the Launchpad Mini MK3. It was designed to make rendering still images (i.e. _**bitmaps**_) and moving images (i.e. _**movies**_) fun and easy for the Launchpad all from the comfort of the browser, without having the hassle of installing anything.<br/><br/>
+LP Sketch is a web app used to create bitmaps and movies for the Launchpad Mini MK3. It was designed to make rendering still images (i.e. _**bitmaps**_) and moving images (i.e. _**movies**_) fun and easy for the Launchpad all from the comfort of the browser, without having the hassle of installing anything.
+
 LP Sketch can connect to a Launchpad for direct control of the LEDs on its surface, allowing live previews of created bitmaps and movies (more on this below).
 
 ## Layout
 <img height="500" src="images/lpsketch.png"/>
-1. **Connection status indicator**: Shows if a Launchpad is connected.
+1. Connection status indicator: Shows if a Launchpad is connected.
 2. **Save button**: Save bitmap/movie to file
 3. **Load button**: Load bitmap/movie from file
 4. **Sketchpad**: Click on LED to toggle state
