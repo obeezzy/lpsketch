@@ -13,9 +13,9 @@ LP Sketch can connect to a Launchpad for direct control of the LEDs on its surfa
 5. **Tab bar**: Choose between making a bitmap or a movie
 6. **LED color picker**: Select an LED color
 7. **Frame editor**: Edit frames
-   **Insert button**: Click to insert currently displayed frame into movie roll
-   **Update button**: Click to update selected frame in movie roll
-   **Delete button**: Delete current frame
+    **Insert button**: Click to insert currently displayed frame into movie roll
+    **Update button**: Click to update selected frame in movie roll
+    **Delete button**: Delete current frame
 8. **Movie roll**: Click to display a frame
 9. **Framerate**: Choose the number of frames rendered per second during playback
 10. **Playback control**: Control movie playback
