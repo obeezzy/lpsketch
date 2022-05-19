@@ -19,10 +19,10 @@ LP Sketch can connect to a Launchpad for direct control of the LEDs on its surfa
 8. **Movie roll**: Click to display a frame
 9. **Framerate**: Choose the number of frames rendered per second during playback
 10. **Playback control**: Control movie playback
-   * **Previous button**: Click to switch to previous frame
-   * **Play button**: Play frames at specified frame rate
-   * **Next button**: Click to switch to next frame
-   * **Loop checkbox**: Turn looping on/off
+    * **Previous button**: Click to switch to previous frame
+    * **Play button**: Play frames at specified frame rate
+    * **Next button**: Click to switch to next frame
+    * **Loop checkbox**: Turn looping on/off
 
 ## Syncing with lpminimk3
 LP Sketch's most important feature is its syncing ability. Using [lpminimk3](https://www.github.com/obeezzy/lpminimk3), you can control the LEDs on your Launchpad directly with the LP Sketch web interface. To enable this feature, you must:
