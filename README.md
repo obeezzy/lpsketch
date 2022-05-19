@@ -1,7 +1,8 @@
 # lpsketch
 LP Sketch is a web app used to create bitmaps and movies for the Launchpad Mini MK3. It was designed to make rendering still images (i.e. _**bitmaps**_) and moving images (i.e. _**movies**_) fun and easy for the Launchpad all from the comfort of the browser, without having the hassle of installing anything.
 
-LP Sketch can connect to a Launchpad for direct control of the LEDs on its surface, allowing live previews of created bitmaps and movies ([more on this below](https://github.com/obeezzy/lpsketch/tree/update-readme#syncing-with-lpminimk3)).
+LP Sketch can connect to a Launchpad for direct control of the LEDs on its surface, allowing live previews of created bitmaps and movies ([more on this below](https://github.com/obeezzy/lpsketch#syncing-with-lpminimk3)).
+
 
 ## Layout
 <img height="500" src="images/lpsketch.png"/>
@@ -24,6 +25,7 @@ LP Sketch can connect to a Launchpad for direct control of the LEDs on its surfa
     * **Next button**: Click to switch to next frame
     * **Loop checkbox**: Turn looping on/off
 
+
 ## Syncing with lpminimk3
 LP Sketch's most important feature is its syncing ability. Using [lpminimk3](https://www.github.com/obeezzy/lpminimk3), you can control the LEDs on your Launchpad directly with the LP Sketch web interface. To enable this feature, you must:
 * Install `lpminimk3`:
@@ -37,6 +39,7 @@ $ python -m lpminimk3.graphics.sync
 * Visit the [LP Sketch](https://www.lpsketch.com) website. You should see a green indicator on the left with the word `Connected` next to it if your Launchpad is detected.
 * Click an LED on the grid on the LP Sketch web interface and watch your physical Launchpad LEDs light up!
 
+
 ## How to use
 * Connect your Launchpad to your computer.
 * Visit the [LP Sketch](https://www.lpsketch.com) website.
@@ -45,8 +48,10 @@ $ python -m lpminimk3.graphics.sync
 * Save your bitmap/movie by pressing the `Save` button.
 * You can load your file using the `Load` button. Files can also be run directly using [lpminimk3](https://www.github.com/obeezzy/lpminimk3).
 
+
 ## Notes
 Work in progress, so expect things to break!
+
 
 ## License
 [GPLv3](https://www.choosealicense.com/licenses/gpl-3.0/)
